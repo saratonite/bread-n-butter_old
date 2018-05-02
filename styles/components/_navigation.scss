@@ -1,0 +1,32 @@
+.main-nav {
+    margin:0;
+    background-color: #fff;
+    box-shadow: 0 5px 25px 3px #efefef;
+    .brand {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px
+    }
+    ul {
+        list-style: none;
+        display: inline-block;
+
+        li {
+            display:  inline-block;
+            a {
+                display: inline-block;
+                padding: 10px;
+                text-transform: uppercase;
+                text-decoration: none;
+                &:visited, &:active,&:link {
+                    color: #535353;
+                    font-weight: 400;
+                }
+                &:hover {
+                    background-color: lighten($color-primary,25%);
+                }
+            }
+        }
+    }
+}

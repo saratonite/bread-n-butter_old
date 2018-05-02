@@ -1,3 +1,8 @@
-import '../styles/index.scss';
-export default () => <div className="app"><h1>Bread N Butter</h1>
-</div>
+
+import Layout from '../components/layout/Layout';
+export default () =>
+ <Layout>
+    <section className="section-home">
+        <h1>Home Page</h1>
+    </section>
+</Layout>
