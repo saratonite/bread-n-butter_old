@@ -1,0 +1,14 @@
+.main-header {
+    padding: 2rem;
+    min-height: 50vh;
+    text-align: center;
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 100;
+        color: $color-primary;
+    }
+    p {
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+}

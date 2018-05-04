@@ -15,7 +15,9 @@ body {
     width: 100%;
 }
 @import './_variables.scss';
+@import './_base.scss';
 @import './components/navigation.scss';
+@import './layout/header.scss';
 
 section {
     padding: 2rem;
