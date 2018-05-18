@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "node server",
     "build": "next build",
     "start": "next start"
   },
@@ -13,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^6.0.0",
+    "express": "^4.16.3",
+    "next": "^6.0.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   },
