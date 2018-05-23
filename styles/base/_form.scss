@@ -1,0 +1,31 @@
+.label-blk {
+    display: block;
+    color: $color-dark-light;
+}
+.form-control{
+    padding: 10px 5px;
+    margin-bottom:5px;
+    border: 1px solid #dddd;
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+    font-size: 100%;
+    color: $color-dark-light;
+}
+
+
+.btn {
+    padding:  10px 5px;
+    border: 1px solid lighten($color-primary, 5%);
+    background-color: darken($color-primary,10%);
+    color: #fff;
+    border-radius: 3px;
+    font-size: 100%;
+
+    &:hover {
+        background-color: darken($color-primary,5%);
+    }
+}
+.btn-lg {
+    width: 100%;
+}
