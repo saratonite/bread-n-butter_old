@@ -2,10 +2,11 @@
   "name": "bread-n-butter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server",
+    "server": "node server",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
