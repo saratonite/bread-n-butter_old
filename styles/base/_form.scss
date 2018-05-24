@@ -9,8 +9,13 @@
     border-radius: 3px;
     width: 100%;
     outline: none;
-    font-size: 100%;
     color: $color-dark-light;
+    font-size: inherit;
+    letter-spacing: 0.5px;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 
