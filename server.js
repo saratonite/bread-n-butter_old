@@ -6,10 +6,16 @@ const port = process.env.PORT || 3000;
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
+/** Controllers  */
+
+const testController = require('./controllers/testController');
+
 app.prepare()
     .then(() => {
 
         const server = express();
+
+        server.get('/test', testController.getIndex);
 
         server.get('*', (req, res)=> {
             return handle(req, res);
