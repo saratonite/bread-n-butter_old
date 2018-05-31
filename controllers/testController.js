@@ -1,6 +1,13 @@
+const User = require('../models/User');
 
 exports.getIndex = (req, res) => {
 
+    User.find({}, (err, data) => {
 
-    res.send('Hello')
+        if(err) res.send("Error");
+
+        res.json(data);
+    })
+
+
 }
