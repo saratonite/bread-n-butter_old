@@ -6,6 +6,7 @@ export default () => (
         
             <div id="login-box">
             <h1>Login Page</h1>
+            <form>
                 <div className="form-group">
                     <label className="label-blk">Username / Email</label>
                     <input type="text" className="form-control"/>
@@ -20,6 +21,8 @@ export default () => (
                 <div className="form-group">
                     Or <Link href="/signup"><a>Sign up here</a></Link>
                 </div>
+            </form>
+                
             </div>
         </section>
     </Layout>
