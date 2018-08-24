@@ -1,33 +1,32 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import Layout from '../components/layout/Layout';
+import TextInput from '../components/form/TextInput';
+import Button from '../components/form/Button';
+
 
 export default class  extends Component {
+
+    onSubmit = (e) => {
+        console.log('Submitiing form ')
+        e.preventDefault();
+    }
     render() {
         return (
 
             <Layout>
                 <section>
                     <div className="signup-box">
-                     <h1>Signup</h1>
-                    <form>
-                        <div className="form-group">
-                            <label className="label-blk">Name</label>
-                            <input type="text" className="form-control"/>
-                        </div>
-                        <div className="form-group">
-                            <label className="label-blk">Email</label>
-                            <input type="text" className="form-control"/>
-                        </div>
-                        <div className="form-group">
-                            <label className="label-blk">Password</label>
-                            <input type="password" className="form-control" />
-                        </div>
+                     <h1 className="title is-3">Signup</h1>
+                    <form onSubmit={ this.onSubmit }>
+                        <TextInput name="name" label="Name"/>
+                        <TextInput name="email" label="Email"/>
+                        <TextInput type="password" name="password" label="Password"/>
                       
-                        <div className="form-group">
-                            <button className="btn btn-lg">SIGN UP</button>
+                        <div className="field">
+                           <Button>Signup</Button>
                         </div>
-                        <div className="form-group">
+                        <div className="field">
                             Or <Link href="/login"><a>Already a user?</a></Link>
                         </div>
                     </form>

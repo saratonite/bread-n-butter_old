@@ -1,12 +1,11 @@
 
 @import './_variables.scss';
-@import './base/base.scss';
-@import './components/navigation.scss';
 @import './layout/header.scss';
-@import './base/form.scss';
 @import './pages/login.scss';
 @import './pages/signup.scss';
 @import './pages/error.scss';
+
+@import '../node_modules/bulma/bulma.sass';
 
 section {
     padding: 2rem;

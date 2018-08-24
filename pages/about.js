@@ -6,7 +6,7 @@ export default class  extends Component {
         return(
             <Layout>
                 <section>
-                    <h1>About Page</h1>
+                    <h1 className="title is-3">About Page</h1>
                 </section>
             </Layout>
         )
