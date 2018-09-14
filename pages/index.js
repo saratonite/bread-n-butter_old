@@ -1,14 +1,16 @@
-
-import Layout from '../components/layout/Layout';
-export default () =>
- <Layout>
-    <section className="section-home">
-        <header className="main-header">
-        <div className="hero-box">
-            <h1>Bread & Butter.</h1>
-            <p>A Simple Boilerplate build with Node / Next / Express / React / MongoDB / Sass</p>
+import Layout from '../components/layout/Layout'
+export default () => (
+  <Layout>
+    <section className='section-home'>
+      <header className='main-header'>
+        <div className='hero-box'>
+          <h1>Bread & Butter.</h1>
+          <p>
+            A Simple Boilerplate build with Node / Next / Express / React / MongoDB / Sass
+          </p>
         </div>
-            
-        </header>
+
+      </header>
     </section>
-</Layout>
+  </Layout>
+)

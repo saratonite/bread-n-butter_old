@@ -1,5 +1,6 @@
 # Bread N Butter
-![alt text](logo.png "A Next js boilerplate")
+
+![Bread N Butter](logo.png 'A Next js boilerplate')
 
 ## TODO's
 
